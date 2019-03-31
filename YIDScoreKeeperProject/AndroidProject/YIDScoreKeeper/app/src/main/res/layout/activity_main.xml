@@ -10,13 +10,36 @@
         tools:context=".MainActivity" android:background="@color/backgroundColor">
     <requestFocus tools:ignore="MissingConstraints"/>
     <ImageView
-            android:layout_width="0dp"
+            android:layout_width="122dp"
             android:layout_height="40dp" app:srcCompat="@drawable/topimage2"
             android:id="@+id/topLogo" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Load"
+            android:onClick="load"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:id="@+id/load" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/topLogo"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/team1Name"
+            android:background="@color/backgroundButtons"
+            android:textColor="@android:color/white"/>
+    <Button
+            android:text="Save"
+            android:onClick="save"
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:id="@+id/save" app:layout_constraintStart_toEndOf="@+id/topLogo" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/team2Name"
+            android:background="@color/backgroundButtons"
+            android:textColor="@android:color/white"/>
     <EditText
             android:layout_width="160dp"
             android:layout_height="43dp"
